@@ -1,0 +1,138 @@
+/***Fonts import**/
+/** Inter Medium 500 :**/@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+/** Inter Bold 700 :**/@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+body{
+    margin: 0;
+    background: #0166FF;
+}
+
+a, p, h1, h3, input{
+    font-family: 'Inter' , sans-serif;
+}
+
+a, p, button{
+    font-size:20px;
+    text-decoration: none;
+}
+
+.auth_title, .auth_subtitle{
+    color: white;
+    text-align: center;
+}
+
+.auth_title{
+    margin-top: 80px;
+}
+
+.auth_links{
+    display: block;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    line-height: 2.5em;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    color: white;
+    border: 2px solid #FA824C;
+    background: #FA824C;
+    margin: 40px auto;
+}
+
+.connexion_link:hover{
+    border: 2px solid white;
+    color: white;
+    background: #0166FF;
+}
+
+.inscription_link:hover{
+    border: 2px solid #0166FF;
+    color: #0166FF;
+    background: white;
+}
+
+.auth_div{
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.copyright_txt{
+    display: block;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    color: grey;
+}
+
+/**page de connexion**/
+
+.login_form{
+    display: block;
+    width: 80%;
+    max-width: 450px;
+    margin: 80px auto;
+}
+
+.login_form input{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: grey;
+}
+
+.pass_forgot_div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass_forgot_div > p{
+    color: grey;
+}
+
+.pass_forgot_div span{
+    line-height: 3.5em;
+}
+.pass_forgot_div span a {
+    display: block;
+    color: white;
+    background: grey;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 2px solid #0166FF;
+    transition: .2s ease-in-out;
+}
+.pass_forgot_div span a:hover{
+    background: none;
+    border: 2px solid grey;
+}
+
+@media (max-width: 520px) {
+    .pass_forgot_div{
+        display: block;
+    }
+
+    .pass_forgot_div span a{
+        width: 100px;
+    }
+
+    .login_confirm{
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .login_form{
+        padding-right: 25px;
+    }
+}
+
+.login_confirm{
+    line-height: 0;
+}
