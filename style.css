@@ -89,38 +89,29 @@ a, p, button{
 
 .pass_forgot_div{
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 
-.pass_forgot_div > p{
-    color: grey;
+.pass_forgot_div span{
+    display: block;
+    width: 50%;
 }
 
-.pass_forgot_div span{
-    line-height: 3.5em;
-}
-.pass_forgot_div span a {
-    display: block;
+.pass_forgot_div span a{
     color: white;
-    background: grey;
-    padding: 0 15px;
-    border-radius: 10px;
-    border: 2px solid #0166FF;
     transition: .2s ease-in-out;
 }
 .pass_forgot_div span a:hover{
-    background: none;
-    border: 2px solid grey;
+    color: #FA824C;
+    transition: .2s ease-in-out;
+}
+
+.inscription_login_link{
+    text-align: right;
 }
 
 @media (max-width: 520px) {
-    .pass_forgot_div{
-        display: block;
-    }
-
-    .pass_forgot_div span a{
-        width: 100px;
-    }
 
     .login_confirm{
         margin: 40px 0;
@@ -136,3 +127,8 @@ a, p, button{
 .login_confirm{
     line-height: 0;
 }
+
+/**Mdp_forgot_section**/
+
+.login_return span{width: 100%;}
+.login_return span a{display:block; width: 100%;}
